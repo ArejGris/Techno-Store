@@ -4,7 +4,7 @@
     >
 <v-container >
     <v-row no-gutters="">
-        <v-col cols="3" md="3" sm="12"  class="warp" v-for="(item,i) in catigories"
+        <v-col cols="12" md="3" lg="3"  class="warp" v-for="(item,i) in catigories"
         :key="i"
         >
         <one-catigory

@@ -1,7 +1,7 @@
 
     <template>
         <v-card
-          class="mx-auto" fluid
+          class="mx-auto" sm="auto"
         >
           <v-img
             :src="image"

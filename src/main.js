@@ -3,7 +3,6 @@ import {createRouter,createWebHistory} from 'vue-router';
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import AllCatigory from './components/AllCatigory.vue';
-import CatigoryDetails from './components/CatigoryDetails.vue';
 import NewProducts from './components/NewProducts.vue';
 import OneCatigory from './components/OneCatigory.vue';
 import TheCatigorys from './components/TheCatigorys.vue';
@@ -16,8 +15,7 @@ routes:[
   {path:'/',component:AllCatigory},
   { path:'/newproduct',component:NewProducts,name:'newproducts'},
   { path:'/newproduct/:id',component:NewProducts,name:'newproduct'},
-  {path:'/cattigories',component:AllCatigory},
-    {path:'/cattigories/:id' ,component:CatigoryDetails,props:true}]
+  {path:'/cattigories',component:AllCatigory},]
 
 })
 const app=createApp(App);

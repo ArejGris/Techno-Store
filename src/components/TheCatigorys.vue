@@ -15,7 +15,7 @@
         </div>
             </v-col>
             <v-col
-              v-for="(item, i) in products"
+              v-for="(item, i) in filterProducts"
               :key="i"
               cols="6"
               md="6"
@@ -80,17 +80,18 @@
                 return store.getters.products;
                
                 });
-           /*   const filterProducts=computed(()=>{
+             const filterProducts=computed(()=>{
                     if(search.value){
-                        console.log(lh)
+                        
                         return products.value.filter((prod)=>{
-                           return search.value.toLowerCase().split(" ").every(v=>prod.title.toLowerCase().includes(v)) })
+                           return search.value.toLowerCase().split('').every((e)=>{ return prod.title.toLowerCase().includes(e)})
+                           })
                        
 
                     }
                     return products.value
                 
                 }
-            ); */
+            );
         
 </script>

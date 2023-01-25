@@ -2,7 +2,7 @@
     <v-app>
         <v-container>
            
-            <v-row cols="3" v-if="page===1">
+            <v-row  v-if="page===1" >
                 <v-col v-for="(item,i) in products.slice(0,3)" :key="i" >
                     <NewProduct
                     :id="item.id"
@@ -13,7 +13,7 @@
                     />
                 </v-col>
             </v-row>
-                <v-row cols="3" v-else-if="page===2">
+                <v-row  v-else-if="page===2">
                     <v-col v-for="(item,i) in products.slice(2,5)" :key="i">
                         <NewProduct
                         :id="item.id"
@@ -35,7 +35,7 @@
                     </v-col>
 
                 </v-row>
-                <v-row cols="3" v-else-if="page===4">
+                <v-row  v-else-if="page===4">
                     <v-col v-for="(item,i) in products.slice(8,11)" :key="i">
                         <NewProduct
                         :id="item.id"
